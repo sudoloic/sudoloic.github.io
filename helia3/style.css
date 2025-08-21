@@ -1,0 +1,346 @@
+html{
+    background: #F0F0F0;
+    color: #565656;
+    font-family: -apple-system, SF Pro Display, "Segoe UI", SegoeUI, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+@media (max-width: 799px) {
+    body{
+        padding: 0 10px;
+    }
+}
+
+/** HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* header logo */
+header>a.logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header>a.logo>img{
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+header>a.calltoaction{
+    background: #1C5AD4;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+@media (max-width: 350px) {
+    header>a.calltoaction{
+        display: none;
+    }
+}
+/** END HEADER */ 
+
+/** NAV BAR */
+nav{
+    background: #D9D9D9;
+    border-radius: 44px;
+    width: 100%;
+    height: 44px;
+
+    margin-top: 20px;
+}
+nav>ul{
+    padding: 7px;
+}
+nav>ul>li{
+    display: inline-block;
+    height: 30px;
+    background: transparent;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+nav>ul>li.active{
+    background: #E9E9E9;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #505050;
+}
+nav>ul>li.active>a{
+    color: #000000;
+}
+
+@media (max-width: 650px) {
+    nav{
+        height: auto;
+        border-radius: 20px;
+    }
+}
+/** END NAV BAR */
+
+main{
+    margin-top: 30px;
+}
+
+main>section>h1{
+    font-size: 25px;
+    color: #000000;
+}
+main>section>h2{
+    font-size: 20px;
+    color: #000000;
+}
+
+main>section>p>a, main>section>ul>li>a{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: 700;
+}
+
+main>section.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main>section.introduction>.promoimage{
+    min-width: 350px;
+    width: 350px;
+}
+main>section.introduction>.promoimage>img{
+    min-width: 350px;
+    width: 350px;
+}
+main>section.introduction>.promotext{
+    margin-left: 40px;
+}
+main>section.introduction>.promotext>h1{
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 50px;
+
+    color: #000000;
+    margin: 0;
+}
+main>section.introduction>.promotext>h2{
+    font-size: 37px;
+    font-weight: 600;
+
+    color: #AAAAAA;
+    margin: 0;
+}
+main>section.introduction>.promotext>p{
+    margin-top: 50px;
+}
+
+@media (max-width: 350px) {
+    main>section.introduction>.promoimage{
+        min-width: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 799px) {
+    main>section.introduction{
+        flex-direction: column;
+    }
+    main>section.introduction>.promoimage{
+        margin-bottom: 30px
+    }
+    main>section.introduction>.promotext{
+        margin-left: 0;
+    }
+}
+
+
+/** PHONE FEATURE */
+main>section.phone-feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+main>section.phone-feature>.promotext{
+    margin-right: 40px;
+}
+main>section.phone-feature>.promotext>.title{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 900;
+}
+main>section.phone-feature>.promotext>.title>.primary{
+    display: inline-block;
+    color: #000000;
+}
+main>section.phone-feature>.promotext>.title>.secondary{
+    display: inline-block;
+    color: #AAAAAA;
+}
+main>section.phone-feature>.promoimage{
+    min-width: 220px;
+    width: 220px;
+}
+main>section.phone-feature>.promoimage>img{
+    min-width: 220px;
+    width: 220px;
+}
+main>section.phone-feature .disclaimer{
+    font-size: 12px;
+    color: #AAAAAA;
+
+    margin-top: 10px;
+}
+
+
+@media (max-width: 799px) {
+    main>section.phone-feature{
+        flex-direction: column;
+    }
+    
+    main>section.phone-feature>.promotext{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+/** END PHONE FEATURE */
+
+
+/** PAD FEATURE */
+main>section.pad-feature{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+main>section.pad-feature>.promotext{
+    margin-bottom: 30px;
+}
+main>section.pad-feature>.promotext>.title{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 900;
+}
+main>section.pad-feature>.promotext>.title>.primary{
+    display: inline-block;
+    color: #000000;
+}
+main>section.pad-feature>.promotext>.title>.secondary{
+    display: inline-block;
+    color: #AAAAAA;
+}
+main>section.pad-feature>.promoimage{
+    width: 100%;
+}
+main>section.pad-feature>.promoimage>img{
+    width: 100%;
+}
+main>section.pad-feature .disclaimer{
+    font-size: 12px;
+    color: #AAAAAA;
+
+    margin-top: 10px;
+}
+/** END PAD FEATURE */
+
+/** MORE FEATURES */
+main>section.more-features{
+    margin-top: 100px;
+}
+main>section.more-features>h2{
+    color: #000000;
+}
+main>section.more-features>.feature{
+    margin-top: 30px;
+}
+main>section.more-features>.feature>.title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+main>section.more-features>.feature>.desc{
+    font-weight: 400;
+}
+/** END MORE FEATURES */
+
+/** FOOTER */
+footer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #838383;
+}
+footer>.logo{
+    display: flex;
+    flex-direction: row;
+    
+    color: #BEBEBE;
+    font-weight: bold;
+    font-size: 45px;
+}
+footer>.logo>img{
+    margin-right: 10px;
+}
+footer>ul.nav{
+    padding:0;
+}
+footer>ul.nav>li{
+    display: inline-block;
+    margin-right: 10px;
+
+    font-weight: 600;
+}
+footer>ul.nav>li.active{
+    color: #000000;
+}
+footer>ul.nav>li:not(.active){
+    text-decoration: underline;
+}
+footer>ul.nav>li>a{
+    color: inherit;
+    text-decoration: none;
+}
+footer>.copyright{
+    margin-top: 30px;
+}
+/** END FOOTER */
+
+/** MISC */
+.appstore{
+    font-size: 10px;
+
+    color: #000;
+    margin-top: 50px;
+}
+.appstore>p{
+    margin-top: 5px;
+}

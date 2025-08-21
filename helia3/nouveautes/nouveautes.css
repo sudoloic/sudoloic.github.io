@@ -1,0 +1,54 @@
+main>section.whatsnew>.version>.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+main>section.whatsnew>.version>.infos>.number{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+main>section.whatsnew>.version>.infos>.date{
+    color: #AAAAAA;
+}
+
+
+main>section.whatsnew>.version>.list-item{
+    padding-top: 10px;
+}
+
+main>section.whatsnew>.version>.list-item>.item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+main>section.whatsnew>.version>.list-item>.item>.type{
+    background: #565656;
+    color: #FFFFFF;
+    padding: 5px 10px;
+
+    font-size: 12px;
+    border-radius: 5px;
+}
+main>section.whatsnew>.version>.list-item>.item>.type.new{
+    background: #008547;
+}
+main>section.whatsnew>.version>.list-item>.item>.type.change{
+    background: #e88b00;
+}
+main>section.whatsnew>.version>.list-item>.item>.type.fix{
+    background: #be0000;
+}
+
+main>section.whatsnew>.version>.list-item>.item>.desc{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+main>section.whatsnew>.version>.list-item>.item>.desc>ul{
+    margin: 0;
+}
