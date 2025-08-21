@@ -20,9 +20,13 @@ body{
 }
 
 @media (max-width: 799px) {
-    header, nav, main, footer{
+    header, nav, footer{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    main {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }
 
